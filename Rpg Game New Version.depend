@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1481410142 source:c:\users\alex\desktop\rpg game new version\files\main.cpp
+	"def.h"
+	"win.h"
+	"draw.h"
+	"texture.h"
+
+1481392438 c:\users\alex\desktop\rpg game new version\files\def.hpp
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	<fstream>
+	<string.h>
+	<vector>
+	<windows.h>
+	<math.h>
+
+1481410787 c:\users\alex\desktop\rpg game new version\files\def.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	<fstream>
+	<string.h>
+	<vector>
+	<windows.h>
+	<math.h>
+	<time.h>
+
+1481407971 c:\users\alex\desktop\rpg game new version\files\win.h
+	"def.h"
+
+1481407971 source:c:\users\alex\desktop\rpg game new version\files\win.cpp
+	"win.h"
+
+1481408553 source:c:\users\alex\desktop\rpg game new version\files\draw.cpp
+	"draw.h"
+	"texture.h"
+
+1481406697 c:\users\alex\desktop\rpg game new version\files\draw.h
+	"def.h"
+	"win.h"
+
+1481403436 source:c:\users\alex\desktop\rpg game new version\files\def.cpp
+	"def.h"
+
+1481410779 c:\users\alex\desktop\rpg game new version\files\texture.h
+	"def.h"
+
+1481406995 source:c:\users\alex\desktop\rpg game new version\texture.cpp
+	"texture.h"
+
+1481409588 source:c:\users\alex\desktop\rpg game new version\files\texture.cpp
+	"texture.h"
+
