@@ -13,32 +13,13 @@
 
 #define null 0
 
+#define MAX_NAME_SIZE 25
+
+#define MAX_IMAGE_DIR_LENGTH 256
+
 using namespace std;
 
 int randNumber(int a1, int a2);
 
-struct entity{
-    sf::Sprite sprite;
-    int sp1, sp2, sp3, sp4;
-};
 
-struct mapEntity{
-    sf::Sprite sprite;
-    int entityId;
-};
-
-struct texture{
-    sf::Texture texture;
-    char name[25];
-};
-
-struct imgMapComp{
-    int length = 0;
-    mapEntity ent[1024];
-};
-
-struct imgEntComp{
-    int length = 0;
-    texture ent[256];
-};
 #endif

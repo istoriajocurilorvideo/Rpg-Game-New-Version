@@ -1,37 +1,46 @@
 #include "texture.h"
 
-imgMapComp tilesets[5];
+images gImages;
 
-imgEntComp images;
+tilesets gTilesets;
 
 void loadImageFromImageFile(char* filename){
     sf::Image image;
 
-    images.length++;
-    char str[strlen(filename)], *aux;
+    gImages.length++;
+    char str[MAX_IMAGE_DIR_LENGTH], *aux;
 
     strcpy(str, filename);
     aux = strrchr(str, '\\');
     if(aux) strcpy(aux, aux+1);
     aux = strtok(aux, ".");
-    strcpy(images.ent[images.length].name, aux);
+    strcpy(gImages.texture[gImages.length].name, aux);
 
     image.loadFromFile(string(filename));
     image.createMaskFromColor(sf::Color(255, 0 ,220));
-    images.ent[images.length].texture.loadFromImage(image);
-
+    gImages.texture[gImages.length].textureInfo.loadFromImage(image);
 }
-/*
+
 void loadImageFromInfFile(char* filename){
     ifstream file(filename);
-    char imageFile[256];
+    char imageDir[MAX_IMAGE_DIR_LENGTH];
+    char str[MAX_IMAGE_DIR_LENGTH];
+    char *aux;
     sf::Image image;
 
-    while(file.get(imageFile, 256)) {
+    while(file.get(imageDir, 256)) {
         file.get();
-        image.loadFromFile(string(imageFile));
+
+        gImages.length++;
+
+        strcpy(str, imageDir);
+        aux = strrchr(str, '\\');
+        if(aux) strcpy(aux, aux+1);
+        aux = strtok(aux, ".");
+        strcpy(gImages.texture[gImages.length].name, aux);
+
+        image.loadFromFile(string(imageDir));
         image.createMaskFromColor(sf::Color(255, 0 ,220));
-        images.ent.texture[++images.length].loadFromImage(image);
+        gImages.texture[gImages.length].textureInfo.loadFromImage(image);
     }
 }
-*/

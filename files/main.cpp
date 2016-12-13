@@ -10,8 +10,9 @@ int main()
     loadImageFromImageFile("res\\images\\grass.bmp");
     loadImageFromImageFile("res\\images\\rock.bmp");
     loadImageFromImageFile("res\\images\\red.bmp");
-    //loadImageFromInfFile("images.inf");
-    runGameLoop();
+    loadImageFromInfFile("images.inf");
+    for(int i=1; i<=gImages.length; i++) cout<<i<<". "<<gImages.texture[i].name<<endl;
+    runGameLoop ();
     return 0;
 }
 
