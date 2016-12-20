@@ -1,10 +1,6 @@
 #include "texture.h"
 
-images gImages;
-
-tilesets gTilesets;
-
-void loadImageFromImageFile(char* filename){
+void loadImageFromImageFile(char* filename, image& gImages){
     sf::Image image;
 
     gImages.length++;
@@ -21,7 +17,7 @@ void loadImageFromImageFile(char* filename){
     gImages.texture[gImages.length].textureInfo.loadFromImage(image);
 }
 
-void loadImageFromInfFile(char* filename){
+void loadImageFromInfFile(char* filename, image& gImages){
     ifstream file(filename);
     char imageDir[MAX_IMAGE_DIR_LENGTH];
     char str[MAX_IMAGE_DIR_LENGTH];
@@ -45,22 +41,19 @@ void loadImageFromInfFile(char* filename){
     }
 }
 
-void loadTileset(char *filename, int w, int h){
+void loadTileset(char *filename, int w, int h, tileset& gTilesets){
     sf::Image image;
     int i, j, imgH, imgW;
 
     image.loadFromFile(string(filename));
     image.createMaskFromColor(sf::Color(255, 0 ,220));
     gTilesets.length++;
-    gTilesets.tileset[gTilesets.length].tileWidth = w;
-    gTilesets.tileset[gTilesets.length].tileHeight = h;
-    gTilesets.tileset[gTilesets.length].texWidth = image.getSize().x;
-    gTilesets.tileset[gTilesets.length].texHeight = image.getSize().y;
+    gTilesets.tilesets[gTilesets.length].tileWidth = w;
+    gTilesets.tilesets[gTilesets.length].tileHeight = h;
     imgW = image.getSize().x/w;
     imgH = image.getSize().y/h;
-    gTilesets.tileset[gTilesets.length].length = imgH * imgW;
-
+    gTilesets.tilesets[gTilesets.length].length = imgH * imgW;
     for(i=0; i<=imgH-1; i++)
-        for(j=0; j<=imgW-1; j++)
-            gTilesets.tileset[gTilesets.length].texture[i*imgW+j].loadFromImage(image, sf::IntRect(j*w, i*h, w, h));
+        for(j=0; j<=imgW-1 ;j++)
+            gTilesets.tilesets[gTilesets.length].texture[i*imgW+j].loadFromImage(image, sf::IntRect(j*w, i*h, w, h));
 }

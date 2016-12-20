@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1482237534 source:c:\users\alex\desktop\rpg game new version\files\main.cpp
+1482274749 source:c:\users\alex\desktop\rpg game new version\files\main.cpp
 	"def.h"
 	"win.h"
 	"draw.h"
@@ -38,21 +38,21 @@
 	"draw.h"
 	"texture.h"
 
-1482002820 c:\users\alex\desktop\rpg game new version\files\draw.h
+1482264410 c:\users\alex\desktop\rpg game new version\files\draw.h
 	"def.h"
 	"win.h"
 	"texture.h"
 
-1481410658 source:c:\users\alex\desktop\rpg game new version\files\def.cpp
+1482265120 source:c:\users\alex\desktop\rpg game new version\files\def.cpp
 	"def.h"
 
-1481996116 c:\users\alex\desktop\rpg game new version\files\texture.h
+1482275110 c:\users\alex\desktop\rpg game new version\files\texture.h
 	"def.h"
 
 1481406995 source:c:\users\alex\desktop\rpg game new version\texture.cpp
 	"texture.h"
 
-1481998505 source:c:\users\alex\desktop\rpg game new version\files\texture.cpp
+1482274771 source:c:\users\alex\desktop\rpg game new version\files\texture.cpp
 	"texture.h"
 
 1482228267 c:\users\alex\desktop\rpg game new version\files\map.h
@@ -120,4 +120,49 @@
 	<map>
 	<cpptl/smallmap.h>
 	<cpptl/forwards.h>
+
+1482236765 source:c:\users\alex\desktop\rpg game new version\files\json\jsoncpp.cpp
+	"json/json.h"
+	<clocale>
+	<json/assertions.h>
+	<json/reader.h>
+	<json/value.h>
+	"json_tool.h"
+	<utility>
+	<cstdio>
+	<cassert>
+	<cstring>
+	<istream>
+	<sstream>
+	<memory>
+	<set>
+	<limits>
+	<json/assertions.h>
+	<json/value.h>
+	<json/writer.h>
+	<math.h>
+	<sstream>
+	<utility>
+	<cstring>
+	<cassert>
+	<cpptl/conststring.h>
+	<cstddef>
+	<algorithm>
+	"json_valueiterator.inl"
+	<json/writer.h>
+	"json_tool.h"
+	<iomanip>
+	<memory>
+	<sstream>
+	<utility>
+	<set>
+	<cassert>
+	<cstring>
+	<cstdio>
+	<float.h>
+	<ieeefp.h>
+	<math.h>
+	<math.h>
+	<cmath>
+	<float.h>
 

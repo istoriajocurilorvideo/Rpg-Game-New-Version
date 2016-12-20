@@ -3,7 +3,7 @@
 
 #include "def.h"
 
-#define MAX_NR_TEXTURES 1024
+#define MAX_NR_TEXTURES 2048
 
 #define MAX_NR_TILESETS 5
 
@@ -12,32 +12,28 @@ struct texture{
     char name[MAX_NAME_SIZE];
 };
 
-struct images{
+struct image{
     texture texture[MAX_NR_TEXTURES];
     int length = 0;
 };
 
-struct tilesetTextures{
+struct tilesetForm{
     sf::Texture texture[MAX_NR_TEXTURES];
     int tileWidth, tileHeight;
-    int texWidth, texHeight;
-    int length = 0;
+    int length=0;
 };
 
-struct tilesets{
-    tilesetTextures tileset[MAX_NR_TILESETS];
-    int length = 0;
+struct tileset{
+    tilesetForm tilesets[MAX_NR_TILESETS];
+    int length=0;
 };
 
-void loadImageFromImageFile(char* filename);
+void loadImageFromImageFile(char* filename, image& gImages);
 
-void loadImageFromInfFile(char* filename);
+void loadImageFromInfFile(char* filename, image& gImages);
 
-void loadTileset(char *filename, int w, int h);
+void loadTileset(char *filename, int w, int h, tileset& gTilesets);
+
 //char *getImage(char *name);
-
-extern images gImages;
-
-extern tilesets gTilesets;
 
 #endif // TEXTURE_H_INCLUDED
