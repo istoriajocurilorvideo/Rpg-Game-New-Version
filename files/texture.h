@@ -17,13 +17,15 @@ struct images{
     int length = 0;
 };
 
-struct textures{
-    sf::Texture textureInfo[MAX_NR_TEXTURES];
+struct tilesetTextures{
+    sf::Texture texture[MAX_NR_TEXTURES];
+    int tileWidth, tileHeight;
+    int texWidth, texHeight;
     int length = 0;
 };
 
 struct tilesets{
-    textures texture[MAX_NR_TILESETS];
+    tilesetTextures tileset[MAX_NR_TILESETS];
     int length = 0;
 };
 
@@ -31,6 +33,7 @@ void loadImageFromImageFile(char* filename);
 
 void loadImageFromInfFile(char* filename);
 
+void loadTileset(char *filename, int w, int h);
 //char *getImage(char *name);
 
 extern images gImages;

@@ -37,11 +37,14 @@
 		<Unit filename="files/draw.cpp" />
 		<Unit filename="files/draw.h" />
 		<Unit filename="files/main.cpp" />
+		<Unit filename="files/map.cpp" />
+		<Unit filename="files/map.h" />
 		<Unit filename="files/texture.cpp" />
 		<Unit filename="files/texture.h" />
 		<Unit filename="files/win.cpp" />
 		<Unit filename="files/win.h" />
 		<Unit filename="images.inf" />
+		<Unit filename="res/maps/map1.inf" />
 		<Extensions>
 			<code_completion />
 			<envvars />

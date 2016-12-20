@@ -16,17 +16,18 @@ void drawRect(float x, float y, float w, float h){
     drawRect(x, y, w, h, 255, 255, 255);
 }
 
-void drawImage(float x, float y, int id){
+
+void drawImage(float x, float y, sf::Texture texture){
     sprite.setPosition(x, y);
-    sprite.setTexture(gImages.texture[id].textureInfo);
+    sprite.setTexture(texture);
     window.draw(sprite);
 }
 
-void drawImage(float x, float y, float w, float h, int id){
+void drawImage(float x, float y, float w, float h, sf::Texture texture){
     sprite.setPosition(x, y);
-    sprite.setTexture(gImages.texture[id].textureInfo);
+    sprite.setTexture(texture);
     float wSp = sprite.getGlobalBounds().width;
     float hSp = sprite.getGlobalBounds().height;
-    sprite.scale(sf::Vector2f((float)(w/wSp),(float)(h/hSp)));
+    sprite.scale(sf::Vector2f(w/wSp, h/hSp));
     window.draw(sprite);
 }

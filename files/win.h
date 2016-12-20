@@ -19,4 +19,5 @@ int getWinHeight();
 extern sf::RenderWindow window;
 
 extern sf::Event event;
+
 #endif // WINDOW_HPP_INCLUDED

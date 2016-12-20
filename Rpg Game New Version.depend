@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1481472527 source:c:\users\alex\desktop\rpg game new version\files\main.cpp
+1482237534 source:c:\users\alex\desktop\rpg game new version\files\main.cpp
 	"def.h"
 	"win.h"
 	"draw.h"
 	"texture.h"
+	"map.h"
 
 1481392438 c:\users\alex\desktop\rpg game new version\files\def.hpp
 	<SFML/Graphics.hpp>
@@ -15,7 +16,7 @@
 	<windows.h>
 	<math.h>
 
-1481468347 c:\users\alex\desktop\rpg game new version\files\def.h
+1482237651 c:\users\alex\desktop\rpg game new version\files\def.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<iostream>
@@ -25,30 +26,98 @@
 	<windows.h>
 	<math.h>
 	<time.h>
+	"json\json\json.h"
 
-1481407971 c:\users\alex\desktop\rpg game new version\files\win.h
+1482002712 c:\users\alex\desktop\rpg game new version\files\win.h
 	"def.h"
 
-1481472403 source:c:\users\alex\desktop\rpg game new version\files\win.cpp
+1482002711 source:c:\users\alex\desktop\rpg game new version\files\win.cpp
 	"win.h"
 
-1481472547 source:c:\users\alex\desktop\rpg game new version\files\draw.cpp
+1482002854 source:c:\users\alex\desktop\rpg game new version\files\draw.cpp
 	"draw.h"
 	"texture.h"
 
-1481472547 c:\users\alex\desktop\rpg game new version\files\draw.h
+1482002820 c:\users\alex\desktop\rpg game new version\files\draw.h
 	"def.h"
 	"win.h"
+	"texture.h"
 
 1481410658 source:c:\users\alex\desktop\rpg game new version\files\def.cpp
 	"def.h"
 
-1481467965 c:\users\alex\desktop\rpg game new version\files\texture.h
+1481996116 c:\users\alex\desktop\rpg game new version\files\texture.h
 	"def.h"
 
 1481406995 source:c:\users\alex\desktop\rpg game new version\texture.cpp
 	"texture.h"
 
-1481468925 source:c:\users\alex\desktop\rpg game new version\files\texture.cpp
+1481998505 source:c:\users\alex\desktop\rpg game new version\files\texture.cpp
 	"texture.h"
+
+1482228267 c:\users\alex\desktop\rpg game new version\files\map.h
+	"def.h"
+
+1482228258 source:c:\users\alex\desktop\rpg game new version\files\map.cpp
+	"map.h"
+
+1482236765 c:\users\alex\desktop\rpg game new version\files\json\json\json.h
+	<stddef.h>
+	<string>
+	<stdint.h>
+	<cpptl/config.h>
+	"version.h"
+	"allocator.h"
+	"config.h"
+	"forwards.h"
+	"forwards.h"
+	<string>
+	<vector>
+	<exception>
+	<map>
+	<cpptl/smallmap.h>
+	<cpptl/forwards.h>
+	"features.h"
+	"value.h"
+	<deque>
+	<iosfwd>
+	<stack>
+	<string>
+	<istream>
+	"value.h"
+	<vector>
+	<string>
+	<ostream>
+	<stdlib.h>
+	<sstream>
+	"config.h"
+
+1482133370 c:\users\alex\desktop\rpg game new version\files\json\json\version.h
+
+1482133370 c:\users\alex\desktop\rpg game new version\files\json\json\allocator.h
+	<cstring>
+	<memory>
+
+1482133370 c:\users\alex\desktop\rpg game new version\files\json\json\config.h
+	<stddef.h>
+	<string>
+	<stdint.h>
+	<cpptl/config.h>
+	"version.h"
+	"allocator.h"
+
+1482133370 c:\users\alex\desktop\rpg game new version\files\json\json\forwards.h
+	"config.h"
+
+1482133370 c:\users\alex\desktop\rpg game new version\files\json\json\features.h
+	"forwards.h"
+
+1482133370 c:\users\alex\desktop\rpg game new version\files\json\json\value.h
+	"forwards.h"
+	<string>
+	<vector>
+	<exception>
+	<map>
+	<cpptl/smallmap.h>
+	<cpptl/forwards.h>
 
